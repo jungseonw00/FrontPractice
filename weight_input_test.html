@@ -11,7 +11,9 @@
         var weight = prompt('당신의 몸무게는?', '0');   // 체중 입력
         
         var normal_w = (height = 100) * 0.9; // 평균 체중
-        
+        var result = weight >= normal_w -5 && weight <= normal_w +5; 
+        result = result ? "적정 체중입니다." : "적정체중이 아닙니다.";
+        document.write(name + "님은" + result)
     </script>
 </head>
 <body>
